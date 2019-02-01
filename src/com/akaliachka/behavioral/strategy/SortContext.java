@@ -43,6 +43,9 @@ public class SortContext {
 		this.sortingOrder = sortingOrder;
 	}
 
+	/**
+	 * Implement STRATEGY
+	 */
 	private void sortStratagyImplementation() {
 		getSortStrategy().sort(array, sortingOrder);
 	}
@@ -96,7 +99,13 @@ public class SortContext {
 		System.out.println("Context objecti after ascending sort: " + sortContext);
 	}
 
+	/**
+	 * Creating new fixed length array
+	 *
+	 * @param n array capacity
+	 * @return new array
+	 */
 	private static int[] generateNLengthIntArray(int n) {
-		return IntStream.range(0, n).map(i -> (int) (Math.random() * 1000)).toArray();
+		return IntStream.range(0, n).map(i -> (int) (Math.random() * 1000 - 500)).toArray();
 	}
 }

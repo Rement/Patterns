@@ -8,7 +8,7 @@ import com.akaliachka.enums.SortingOrder;
 public class InsertionSort implements ISortStrategy {
 
 	/**
-	 * Insertion Sort sort. Complexity O(n^2) in the worst case, O(n) in the best
+	 * Insertion sort. Complexity O(n^2) in the worst case, O(n) in the best
 	 * <p>
 	 * {@inheritDoc}
 	 */
