@@ -4,12 +4,11 @@ public class PizzaComponent implements IPizzaGenerator {
 
 	private String pizzaBase;
 
-	public PizzaComponent(String pizzaBase) {
-		this.pizzaBase = pizzaBase;
+	public PizzaComponent() {
 	}
 
 	@Override
-	public String createPizzaBase() {
+	public String createPizzaBase(String pizzaBase) {
 		return pizzaBase;
 	}
 }

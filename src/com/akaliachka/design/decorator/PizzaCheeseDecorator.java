@@ -1,16 +1,15 @@
 package com.akaliachka.design.decorator;
 
-public class PizzaCheeseDecorator implements IPizzaGenerator {
+public class PizzaCheeseDecorator extends PizzaDecorator {
 
-    IPizzaGenerator iPizzaGenerator;
 
     public PizzaCheeseDecorator(IPizzaGenerator iPizzaGenerator) {
-        this.iPizzaGenerator = iPizzaGenerator;
+        super(iPizzaGenerator);
     }
 
     @Override
-    public String createPizzaBase() {
+    public String createPizzaBase(String base) {
         System.out.println("Cheese");
-        return iPizzaGenerator.createPizzaBase();
+        return iPizzaGenerator.createPizzaBase(base);
     }
 }
